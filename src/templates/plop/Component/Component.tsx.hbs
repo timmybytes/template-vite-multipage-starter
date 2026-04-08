@@ -1,0 +1,22 @@
+{{!-- Component.tsx.hbs  --}}
+
+import { FC } from 'react';
+import tw from 'twin.macro';
+import { CustomCssProps } from '@/types';
+
+export type {{pascalCase name}}Props = CustomCssProps & {
+  //
+};
+
+/**
+ * {{pascalCase name}}
+ */
+export const {{pascalCase name}}: FC<{{pascalCase name}}Props> = ({
+  customCss
+  }) => {
+  return (
+    <Container css={customCss}>Hello!</Container>
+  );
+};
+
+const Container = tw.div``;

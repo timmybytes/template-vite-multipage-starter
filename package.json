@@ -1,0 +1,51 @@
+{
+  "name": "vite-emotion-typescript",
+  "type": "module",
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "type-check": "tsc --noEmit",
+    "generate": "yarn plop",
+    "atom": "yarn plop component atom",
+    "molecule": "yarn plop component molecule",
+    "organism": "yarn plop component organism",
+    "wrapper": "yarn plop component wrapper",
+    "hook": "yarn plop hook",
+    "context": "yarn plop context",
+    "page": "yarn plop page",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/poppins": "^5.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^7.14.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.2.1",
+    "@types/node": "^25.5.2",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "chalk": "^5.3.0",
+    "eslint": "^8",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "plop": "^4.0.1",
+    "react-icons": "^5.2.1",
+    "tailwindcss": "^3.4.1",
+    "twin.macro": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  }
+}
