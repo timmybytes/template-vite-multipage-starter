@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "twin.d.ts", "tailwind.config.cjs"],
+  "include": ["src", "twin.d.ts", "tailwind.config.cjs", "pages"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

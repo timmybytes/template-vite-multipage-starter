@@ -1,0 +1,20 @@
+import { PageWrapper } from '@/components/wrappers/PageWrapper';
+import { TransitionWrapper } from '@/components/wrappers/TransitionWrapper';
+import { ViewportMargins } from '@/components/wrappers/ViewportMargins';
+
+/**
+ * {{pascalCase name}} page
+ */
+PageWrapper({
+  pageReferences: [],
+  pageContent: (
+    <ViewportMargins>
+      <TransitionWrapper name="page-title">
+        <h1>{{pascalCase name}}</h1>
+      </TransitionWrapper>
+      <TransitionWrapper name="page-content" params=\{{ delay: 0.3 }}>
+        <p>Page content</p>
+      </TransitionWrapper>
+    </ViewportMargins>
+  ),
+});

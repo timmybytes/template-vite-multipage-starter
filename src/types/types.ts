@@ -56,3 +56,5 @@ export type OptionalChildrenProps = {
 
 /** SVGs turned into components */
 export type CustomSVGProps = CustomCssProps & SVGAttributes<SVGElement>;
+
+export type BrandColorProps = 'orange' | 'purple' | 'gray';

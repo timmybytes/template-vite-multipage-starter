@@ -1,7 +1,7 @@
+import { NavBar } from '@/components/organisms/navigation';
+import { CustomCssProps } from '@/types';
 import { FC } from 'react';
 import tw from 'twin.macro';
-import { CustomCssProps } from '@/types';
-import { NavBar } from '@/components/molecules/NavBar';
 
 export type HeaderProps = CustomCssProps & {
   //

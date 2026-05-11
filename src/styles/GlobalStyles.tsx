@@ -1,15 +1,17 @@
 import { Global } from '@emotion/react';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
 import React from 'react';
-import tw, { GlobalStyles as BaseStyles, css, theme } from 'twin.macro';
+import { GlobalStyles as BaseStyles, css } from 'twin.macro';
 
-const customStyles = css({
-  h1: {
-    ...tw`text-7xl text-purple-400`,
-  },
-  a: {
-    ...tw`text-purple-400 hover:text-purple-700 transition-colors duration-200`,
-  },
-});
+const customStyles = css(css`
+  body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+`);
 
 const GlobalStyles = () => (
   <React.Fragment>
